@@ -6,6 +6,7 @@ Original Lamescan seems to be dead since 2010. All links and redsh.ru website ar
 # Building
 
 Project is for Visual Studio 2017. Windows SDK is 8.1.
+SRP is broken and project won't build.
 
 Components:
 
