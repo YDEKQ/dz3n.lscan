@@ -8,7 +8,7 @@
 #include <windows.h>
 #include <winsock.h>
 #include <openssl/md5.h>
-#include <twofish/aes.h>
+//#include <twofish/aes.h>
 #include <openssl/srp.h>
 #include "tcp.h"
 
