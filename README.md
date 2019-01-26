@@ -10,6 +10,7 @@ Project is for Visual Studio 2017. Windows SDK is 8.1.
 Components:
 
 - OpenSSL [(tutorial)](https://stackoverflow.com/questions/45494630/how-to-build-openssl-on-windows-with-visual-studio-2017)
+  There are compiled libraries in lib folder.
 
 # Credits
 
