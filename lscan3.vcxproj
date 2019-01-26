@@ -62,7 +62,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>wsock32.lib;iphlpapi.lib;libeay32.lib;srpstaticd.lib;twofishd.lib;%(AdditionalDependencies);crypt32.lib</AdditionalDependencies>
+      <AdditionalDependencies>wsock32.lib;iphlpapi.lib;libcrypto.lib;srpstaticd.lib;twofishd.lib;%(AdditionalDependencies);crypt32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -82,7 +82,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>wsock32.lib;iphlpapi.lib;libeay32.lib;srpstatic.lib;twofish.lib;%(AdditionalDependencies);crypt32.lib</AdditionalDependencies>
+      <AdditionalDependencies>wsock32.lib;iphlpapi.lib;libcrypto.lib;srpstatic.lib;twofish.lib;%(AdditionalDependencies);crypt32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
