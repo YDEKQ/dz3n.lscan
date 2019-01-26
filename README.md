@@ -3,6 +3,14 @@
 Program to bruteforce RAdmin servers. Only for scanning your own servers for vulnerabilities!
 Original Lamescan seems to be dead since 2010. All links and redsh.ru website are dead.
 
+# Building
+
+Project is for Visual Studio 2017. Windows SDK is 8.1.
+
+Components:
+
+- OpenSSL [(manual)](http://developer.covenanteyes.com/building-openssl-for-visual-studio/)
+
 # Credits
 
 **Lamescan** by **redsh** [(AntiChat)](https://forum.antichat.ru/members/121094/) 
