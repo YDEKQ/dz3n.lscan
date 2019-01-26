@@ -5,6 +5,8 @@ Original Lamescan seems to be dead since 2010. All links and redsh.ru website ar
 
 # Credits
 
-Lamescan: redsh [(AntiChat)](https://forum.antichat.ru/members/121094/) 
+**Lamescan** by **redsh** [(AntiChat)](https://forum.antichat.ru/members/121094/) 
 
-[Original repo](https://github.com/Vulnerability-scanner/lscan3_CLI_src)
+**dz3n.lscan** based on Lamescan by **Dz3n** [(GitHub)](https://github.com/feel-the-dz3n)
+
+The [original repository](https://github.com/Vulnerability-scanner/lscan3_CLI_src) where the lost source code was found
