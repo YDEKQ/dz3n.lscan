@@ -11,6 +11,9 @@ Components:
 
 - OpenSSL [(tutorial)](https://stackoverflow.com/questions/45494630/how-to-build-openssl-on-windows-with-visual-studio-2017)
   There are compiled libraries in lib folder.
+  
+- Secure Remote Password Protocol (SRP) [(repo)](https://github.com/rxwen/srp)
+  Build instructions are in win32/README file
 
 # Credits
 
