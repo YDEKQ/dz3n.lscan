@@ -41,13 +41,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>y:\Projects\SDK\openssl-1.0.0a\include;y:\Projects\SDK\srp-2.1.2\include;y:\Projects\SDK\twofish\include;$(IncludePath)</IncludePath>
-    <LibraryPath>y:\Projects\SDK\openssl-1.0.0a\lib;y:\Projects\SDK\srp-2.1.2\lib;y:\Projects\SDK\twofish\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>y:\Projects\SDK\openssl-1.0.0a\include;y:\Projects\SDK\srp-2.1.2\include;y:\Projects\SDK\twofish\include;$(IncludePath)</IncludePath>
-    <LibraryPath>y:\Projects\SDK\openssl-1.0.0a\lib;y:\Projects\SDK\srp-2.1.2\lib;y:\Projects\SDK\twofish\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
