@@ -9,7 +9,7 @@ Project is for Visual Studio 2017. Windows SDK is 8.1.
 
 Components:
 
-- OpenSSL [(manual)](http://developer.covenanteyes.com/building-openssl-for-visual-studio/)
+- OpenSSL [(tutorial)](http://developer.covenanteyes.com/building-openssl-for-visual-studio/)
 
 # Credits
 
