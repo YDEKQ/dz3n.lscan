@@ -94,6 +94,8 @@
     <ClCompile Include="radmin.c" />
     <ClCompile Include="scan.c" />
     <ClCompile Include="tcp.c" />
+    <ClCompile Include="twofish\tst2fish.c" />
+    <ClCompile Include="twofish\twofish.c" />
     <ClCompile Include="util.c" />
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +107,10 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="scan.h" />
     <ClInclude Include="tcp.h" />
+    <ClInclude Include="twofish\aes.h" />
+    <ClInclude Include="twofish\debug.h" />
+    <ClInclude Include="twofish\platform.h" />
+    <ClInclude Include="twofish\table.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
   <ItemGroup>

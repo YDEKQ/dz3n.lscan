@@ -42,6 +42,12 @@
     <ClCompile Include="radmin.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="twofish\tst2fish.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="twofish\twofish.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">
@@ -69,6 +75,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="twofish\aes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="twofish\debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="twofish\platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="twofish\table.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
