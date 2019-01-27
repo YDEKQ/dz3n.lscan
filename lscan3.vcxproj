@@ -62,7 +62,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>wsock32.lib;iphlpapi.lib;libcrypto.lib;srpstaticd.lib;twofishd.lib;%(AdditionalDependencies);crypt32.lib</AdditionalDependencies>
+      <AdditionalDependencies>wsock32.lib;iphlpapi.lib;libcrypto.lib;%(AdditionalDependencies);crypt32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -82,7 +82,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>wsock32.lib;iphlpapi.lib;libcrypto.lib;srpstatic.lib;twofish.lib;%(AdditionalDependencies);crypt32.lib</AdditionalDependencies>
+      <AdditionalDependencies>wsock32.lib;iphlpapi.lib;libcrypto.lib;%(AdditionalDependencies);crypt32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -94,7 +94,6 @@
     <ClCompile Include="radmin.c" />
     <ClCompile Include="scan.c" />
     <ClCompile Include="tcp.c" />
-    <ClCompile Include="twofish\tst2fish.c" />
     <ClCompile Include="twofish\twofish.c" />
     <ClCompile Include="util.c" />
   </ItemGroup>

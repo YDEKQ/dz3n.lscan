@@ -1,0 +1,401 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON                    "icons\\lamescan3.ico"
+IDI_HOST_UP             ICON                    "icons\\host-up.ico"
+IDI_HOST_DOWN           ICON                    "icons\\host-down.ico"
+IDI_HOST_QUEUE          ICON                    "icons\\host-queue.ico"
+IDI_HOST_WARN           ICON                    "icons\\host-warn.ico"
+IDI_RADMIN              ICON                    "icons\\radmin.ico"
+IDI_RADMIN_WARN         ICON                    "icons\\radmin-warn.ico"
+IDI_ICON_ADD            ICON                    "icons\\add.ico"
+IDI_ICON_REMOVE         ICON                    "icons\\remove.ico"
+IDI_ICON_CLEAR          ICON                    "icons\\clear.ico"
+IDI_ICON_REQUE          ICON                    "icons\\reque.ico"
+IDI_ICON_START          ICON                    "icons\\start.ico"
+IDI_ICON_STOP           ICON                    "icons\\stop.ico"
+IDI_ICON_PAUSE          ICON                    "icons\\pause.ico"
+IDI_ICON_SAVE           ICON                    "icons\\save.ico"
+IDI_ICON_LOAD           ICON                    "icons\\load.ico"
+IDI_ICON_HTML           ICON                    "icons\\icon_html.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINWIN DIALOGEX 0, 0, 385, 242
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Lamescan 3"
+MENU IDR_MAINNENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RANGES,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,13,38,357,48
+    PUSHBUTTON      "Load",IDC_LOAD_RANGE,13,20,15,13,BS_ICON
+    PUSHBUTTON      "Save",IDC_SAVE_RANGE,31,20,15,13,BS_ICON
+    PUSHBUTTON      "Insert",IDC_ADD_RANGE,55,20,15,13,BS_ICON
+    PUSHBUTTON      "Remove",IDC_REMOVE_RANGE,73,20,15,13,BS_ICON
+    PUSHBUTTON      "Reque",IDC_ADD_DOWN_WARN,91,20,15,13,BS_ICON
+    PUSHBUTTON      "Clear",IDC_REMOVE_ALL,109,20,15,13,BS_ICON
+    PUSHBUTTON      "Start",IDC_SCAN_START,133,20,15,13,BS_ICON
+    PUSHBUTTON      "Pause",IDC_SCAN_PAUSE,151,20,15,13,BS_ICON
+    PUSHBUTTON      "Stop",IDC_SCAN_STOP,169,20,15,13,BS_ICON
+    GROUPBOX        " Сканирование ",IDC_STATIC,6,6,372,102
+    CONTROL         "",IDC_SCAN_PROGRESS,"msctls_progress32",PBS_SMOOTH | WS_BORDER,13,92,326,9
+    LTEXT           "0%",IDC_SCAN_PROGRESS_PERCENT,345,92,23,8
+    GROUPBOX        " Результаты ",IDC_STATIC,6,114,372,122
+    CONTROL         "",IDC_RESULTS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,13,146,357,82
+    PUSHBUTTON      "Load goodies",IDC_LOAD_RESULTS,13,128,15,13,BS_ICON
+    PUSHBUTTON      "Save goodies",IDC_SAVE_RESULTS,31,128,15,13,BS_ICON
+    PUSHBUTTON      "Clear goodies",IDC_CLEAR_RESULTS,67,128,15,13,BS_ICON
+    PUSHBUTTON      "Save goodies",IDC_EXPORT_HTML_RESULTS,49,128,15,13,BS_ICON
+    LTEXT           "",IDC_THREADCOUNT,211,22,153,8
+    LTEXT           "",IDC_RESULT_PROGRESS,211,130,153,8
+END
+
+IDD_RANGEWIN DIALOGEX 0, 0, 226, 130
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Range"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RANGE_IMPORT,"RichEdit20A",ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,7,212,89
+    DEFPUSHBUTTON   "Готово",IDOK,101,108,54,14
+    PUSHBUTTON      "Закрыть",IDCANCEL,167,108,50,14
+END
+
+IDD_PROXYDLG DIALOGEX 0, 0, 209, 130
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Прокси-сервер"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_PROXY_TYPE,54,21,80,79,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PROXY_HOST,54,38,80,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROXY_PORT,150,38,36,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PROXY_USERNAME,54,55,132,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROXY_PASSWORD,54,72,132,13,ES_AUTOHSCROLL
+    CTEXT           ":",IDC_STATIC,138,40,8,8
+    RTEXT           "Тип:",IDC_STATIC,19,23,28,8
+    RTEXT           "Адрес:",IDC_STATIC,19,40,28,8
+    RTEXT           "Логин:",IDC_STATIC,19,57,28,8
+    RTEXT           "Пароль:",IDC_STATIC,19,74,28,8
+    DEFPUSHBUTTON   "Готово",IDOK,88,108,50,14
+    PUSHBUTTON      "Закрыть",IDCANCEL,148,108,50,14
+    GROUPBOX        " Прокси-сервер ",IDC_STATIC,9,6,189,90
+END
+
+IDD_SCANNERDLG DIALOGEX 0, 0, 241, 393
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Основное"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_MAX_THREAD_COUNT,191,18,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Количество потоков сканирования:",IDC_STATIC,15,20,165,8
+    EDITTEXT        IDC_DELAY_TIME,191,35,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Пауза между соединениями с хостом (мс.):",IDC_STATIC,15,37,165,8
+    EDITTEXT        IDC_TCP_TIMEOUT,191,52,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Таймаут ввода/вывода (мс.):",IDC_STATIC,15,54,165,8
+    CONTROL         "Сканироватьхосты в случайном порядке",IDC_RANDOM_SCAN_ORDER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,102,155,10
+    CONTROL         "Пинговать хосты перед сканированием",IDC_PING_ENABLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,140,151,10
+    GROUPBOX        " Сканирование ",IDC_STATIC,9,4,223,116
+    GROUPBOX        " Пинг ",IDC_STATIC,10,126,223,80
+    EDITTEXT        IDC_PING_MAX_SESSIONS,191,153,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Максимум одновременно пингуемых хостов:",IDC_STATIC,15,155,165,8
+    EDITTEXT        IDC_PING_PACKET_COUNT,191,170,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Максимум пакетов на хост:",IDC_STATIC,15,172,165,8
+    EDITTEXT        IDC_PING_TIMEOUT,191,187,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Таймаут (мс.):",IDC_STATIC,15,189,165,8
+    EDITTEXT        IDC_SCAN_PORTS,19,224,205,13,ES_AUTOHSCROLL
+    GROUPBOX        " Сканируемые порты ",IDC_STATIC,10,210,223,36
+    EDITTEXT        IDC_DICT1_PATH,17,275,181,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_DICT1_BROWSE,206,275,19,14
+    GROUPBOX        " Словари ",IDC_STATIC,10,252,223,74
+    EDITTEXT        IDC_DICT2_PATH,17,303,181,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_DICT2_BROWSE,206,303,19,14
+    LTEXT           "Словарь логинов:",IDC_STATIC,18,263,62,8
+    LTEXT           "Словарь паролей:",IDC_STATIC,18,291,62,8
+    GROUPBOX        " Результаты сканирования ",IDC_STATIC,10,330,223,34
+    CONTROL         "Автоматически удалять неудачные результаты",IDC_AUTO_DELETE_BAD,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,345,181,10
+    DEFPUSHBUTTON   "Готово",IDOK,123,374,50,14
+    PUSHBUTTON      "Закрыть",IDCANCEL,183,374,50,14
+    EDITTEXT        IDC_MAX_ERRORS,191,69,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Максимум повторов соединения при разрыве:",IDC_STATIC,15,71,165,8
+    EDITTEXT        IDC_ERROR_DELAY,191,86,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Пауза после разрыва соединения (сек.):",IDC_STATIC,15,88,165,8
+END
+
+IDD_CUSTOMIZEDLG DIALOGEX 0, 0, 202, 161
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Интерфейс"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_RADMIN_PATH,16,22,144,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_RADMIN_PATH_BROWSE,166,22,18,14
+    GROUPBOX        " Путь к клиенту ",IDC_STATIC,8,6,185,52
+    CONTROL         "Автоматически вводить пароль",IDC_ENABLE_WINDOW_CAPTURE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,41,125,10
+    CONTROL         "Сворачивать в трей",IDC_MINIMIZE_TO_TRAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,76,85,10
+    CONTROL         "Включить звуки",IDC_ENABLE_SOUNDS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,90,71,10
+    CONTROL         "Проверять обновления",IDC_CHECK_UPDATES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,104,95,10
+    GROUPBOX        " Настройки интерфейса ",IDC_STATIC,7,61,186,60
+    PUSHBUTTON      "Закрыть",IDCANCEL,143,134,50,14
+    DEFPUSHBUTTON   "Готово",IDOK,84,134,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAINWIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 378
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_RANGEWIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_PROXYDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_SCANNERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 386
+    END
+
+    IDD_CUSTOMIZEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINNENU MENU 
+BEGIN
+    POPUP "Сканер"
+    BEGIN
+        MENUITEM "Старт\tF5",                   IDC_SCAN_START
+        MENUITEM "Стоп\tF6",                    IDC_SCAN_STOP
+        MENUITEM "Пауза\tF8",                   IDC_SCAN_PAUSE
+        MENUITEM SEPARATOR
+        MENUITEM "Выход\tF10",                  IDC_EXIT
+    END
+    POPUP "Диапазоны"
+    BEGIN
+        POPUP "Добавить в очередь"
+        BEGIN
+            MENUITEM "Список диапазонов\tIns",      IDC_ADD_RANGE
+            MENUITEM SEPARATOR
+            MENUITEM "Все ""Оффлайн""",             IDC_ADD_DOWN
+            MENUITEM "Все ""С ошибками""",          IDC_ADD_WARN
+            MENUITEM "Все ""Оффлайн"" и ""С ошибками""\tCtrl+Ins", IDC_ADD_DOWN_WARN
+            MENUITEM "Все ""Просканированные""",    IDC_ADD_UP
+            MENUITEM "Все",                         IDC_ADD_ALL
+        END
+        POPUP "Удалить"
+        BEGIN
+            MENUITEM "Список диапазонов\tDel",      IDC_REMOVE_RANGE
+            MENUITEM SEPARATOR
+            MENUITEM "Все ""Просканированные""",    IDC_REMOVE_UP
+            MENUITEM "Все ""Не просканированные""", IDC_REMOVE_QUEUE
+            MENUITEM "Все ""Оффлайн""",             IDC_REMOVE_DOWN
+            MENUITEM "Все ""С ошибками""",          IDC_REMOVE_WARN
+            MENUITEM "Все\tCtrl+Del",               IDC_REMOVE_ALL
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Загрузить\tF3",               IDC_LOAD_RANGE
+        MENUITEM "Сохранить\tF2",               IDC_SAVE_RANGE
+    END
+    POPUP "Результаты"
+    BEGIN
+        MENUITEM "Загрузить\tShift+F3",         IDC_LOAD_RESULTS
+        MENUITEM "Сохранить\tShift+F2",         IDC_SAVE_RESULTS
+        MENUITEM SEPARATOR
+        MENUITEM "Экспорт в HTML\tF7",          IDC_EXPORT_HTML_RESULTS
+        MENUITEM SEPARATOR
+        MENUITEM "Очистить\tShift+Del",         IDC_CLEAR_RESULTS
+    END
+    POPUP "Настройка"
+    BEGIN
+        MENUITEM "Основное\tF9",                IDC_SCANNER_SETUP
+        MENUITEM "Интерфейс\tShift+F9",         IDC_CUSTOMIZE
+        MENUITEM "Прокси-сервер\tCtrl+P",       IDC_PROXY_SETUP
+    END
+    POPUP "Справка"
+    BEGIN
+        MENUITEM "О программе",                 ID_ABOUT
+        MENUITEM "Руководство\tF1",             ID_MANUAL
+        MENUITEM SEPARATOR
+        MENUITEM "Проверить обновления",        ID_UPDATECHECK
+        MENUITEM "Открыть мой сайт",            ID_WEBSITE
+        MENUITEM "Отправить мне письмо",        ID_EMAIL
+    END
+END
+
+IDR_RESULTS_CONTEXT_MENU MENU 
+BEGIN
+    POPUP "menu"
+    BEGIN
+        POPUP "Соединение"
+        BEGIN
+            MENUITEM "Полный контроль\tEnter",      IDC_RESULT_LINES_CONNECT
+            MENUITEM "Просмотр\tCtrl+N",            IDC_RESULT_LINES_CONNECT_NOINPUT
+            MENUITEM "Выключение\tCtrl+S",          IDC_RESULT_LINES_CONNECT_SHUTDOWN
+            MENUITEM "Передача файлов\tCtrl+F",     IDC_RESULT_LINES_CONNECT_FILE
+            MENUITEM "Телнет\tCtrl+T",              IDC_RESULT_LINES_CONNECT_TELNET
+        END
+        POPUP "Копировать"
+        BEGIN
+            MENUITEM "Хост и порт",                 IDC_RESULTS_COPY_ADDRESS
+            MENUITEM "Логин и пароль",              IDC_RESULTS_COPY_ACCOUNT
+            MENUITEM "Хост, порт, логин и пароль\tCtrl+C", IDC_RESULTS_COPY_ADDRESS_AND_ACCOUNT
+            MENUITEM "Всю строку\tCtrl+W",          IDC_RESULTS_COPY_LINE
+        END
+        MENUITEM "Удалить\tCtrl+R",             IDC_RESULT_LINES_REMOVE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINACCEL ACCELERATORS 
+BEGIN
+    VK_INSERT,      IDC_ADD_DOWN_WARN,      VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      IDC_ADD_RANGE,          VIRTKEY, NOINVERT
+    VK_DELETE,      IDC_CLEAR_RESULTS,      VIRTKEY, SHIFT, NOINVERT
+    VK_F9,          IDC_CUSTOMIZE,          VIRTKEY, SHIFT, NOINVERT
+    VK_F10,         IDC_EXIT,               VIRTKEY, NOINVERT
+    VK_F7,          IDC_EXPORT_HTML_RESULTS, VIRTKEY, NOINVERT
+    VK_F3,          IDC_LOAD_RANGE,         VIRTKEY, NOINVERT
+    VK_F3,          IDC_LOAD_RESULTS,       VIRTKEY, SHIFT, NOINVERT
+    "P",            IDC_PROXY_SETUP,        VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      IDC_REMOVE_ALL,         VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      IDC_REMOVE_RANGE,       VIRTKEY, NOINVERT
+    VK_RETURN,      IDC_RESULT_LINES_CONNECT, VIRTKEY, NOINVERT
+    "F",            IDC_RESULT_LINES_CONNECT_FILE, VIRTKEY, CONTROL, NOINVERT
+    "N",            IDC_RESULT_LINES_CONNECT_NOINPUT, VIRTKEY, CONTROL, NOINVERT
+    "S",            IDC_RESULT_LINES_CONNECT_SHUTDOWN, VIRTKEY, CONTROL, NOINVERT
+    "T",            IDC_RESULT_LINES_CONNECT_TELNET, VIRTKEY, CONTROL, NOINVERT
+    "R",            IDC_RESULT_LINES_REMOVE, VIRTKEY, CONTROL, NOINVERT
+    "C",            IDC_RESULTS_COPY_ADDRESS_AND_ACCOUNT, VIRTKEY, CONTROL, NOINVERT
+    "W",            IDC_RESULTS_COPY_LINE,  VIRTKEY, CONTROL, NOINVERT
+    VK_F2,          IDC_SAVE_RANGE,         VIRTKEY, NOINVERT
+    VK_F2,          IDC_SAVE_RESULTS,       VIRTKEY, SHIFT, NOINVERT
+    VK_F8,          IDC_SCAN_PAUSE,         VIRTKEY, NOINVERT
+    VK_F5,          IDC_SCAN_START,         VIRTKEY, NOINVERT
+    VK_F6,          IDC_SCAN_STOP,          VIRTKEY, NOINVERT
+    VK_F9,          IDC_SCANNER_SETUP,      VIRTKEY, NOINVERT
+    VK_F1,          ID_MANUAL,              VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE_DONE           WAVE                    "sound\\done.wav"
+IDR_WAVE_GOOD           WAVE                    "sound\\good.wav"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

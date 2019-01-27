@@ -42,9 +42,6 @@
     <ClCompile Include="radmin.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="twofish\tst2fish.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="twofish\twofish.c">
       <Filter>Source Files</Filter>
     </ClCompile>
